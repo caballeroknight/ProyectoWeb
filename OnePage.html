@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>La Mejor Reposteria de San Francisco</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+	
+	(function($) {
+    $(document).ready(function() {
+
+
+        $('.productos').slick({
+          arfilas: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: 0,
+         
+          focusOnSelect: true,
+          //pauseOnFocus: true,
+          initialSlide: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  
+        })
+
+        $('.Testimonial').slick({
+          arfilas: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: 0,
+          focusOnSelect: true,
+          arrows: false,
+          //pauseOnFocus: true,
+          initialSlide: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  
+        })
+    });
+
+})(jQuery);
+</script>
+</head>
+<body>
+<header>
+  <div class="contenedor">
+  <img src="img/logo.png">
+  <h1>Reposteria la Rosa</h1>
+  </div>
+</header>
+<section>
+  <div class="contenedor">
+    <ul class="menu-main">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Banner">Banner</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Productos">Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Mod">Ventajas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Testimonial">Testimonios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contacto">Contactos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Direccion">Direccion</a>
+      </li>
+    </ul>
+     </div>
+
+</section>
+<section>
+<div class="contenedor">
+<div id="Banner" class="banner full">
+<div class="fila fila-columnas-2">
+<div class="columna-4">
+	<h2>La Mejor Reposteria En La Zona Sur</h2>
+	<div class="boton">
+	<a href="#">Contactanos</a>
+	</div>
+  </div>
+  <div class="columna-8">
+  </div>
+</div>
+</div>
+</section>
+<section class="fondo1">
+<div class="contenedor">
+	<div id="Descripcion full" class="descripcion">
+		<h2>Bueno, Bonito y Barato</h2>
+		<p>Somos una reposteria hubicada en la zona sur de la ciudad, realizamos todo tipo de dulces y pasteles a un precio asequible</p>
+	</div>
+</section>
+<section>
+<div class="contenedor">
+<div id="Productos" class="contenedor-productos full">
+<h2 class="titulo">Nuestros Productos</h2>
+	<div class="productos">
+		<div class="con">
+		<img width="300 " src="img/imagen1.jpg">
+		</div>
+		<div class="con">
+		<img width="300 " src="img/imagen2.jpg">
+		</div>
+		<div class="con">
+		<img width="300 " src="img/imagen3.jpg">
+		</div>
+		<div class="con">
+		<img width="300 " src="img/imagen4.jpg">
+		</div>
+	</div>
+  </div>
+  </div>
+</section>
+<section>
+<div class="contenedor">
+
+	<div id="Mod" class="modales full">
+  <h2 class="titulo">Pensamos en su Comodidad</h2>
+  <div class="fila">
+  <div class="columna-6 justify-content-center">	
+  <button id="MetodosDePago1" class="button">
+  Metodos De Pago
+</button>
+</div>
+<div class="columna-6 justify-content-center">
+<button type="button" class="button" id="EntregaADomicilio1">
+  Entrega En Domicilio 
+</button>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="EntregaADomicilio">
+        <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Le Enviamos  los postres directo a Su Casa</h2>
+    </div>
+    <div class="modal-body">
+ <p>Disponemos de Servicio a Domicilio Para facilitarle su vida y no tenga necesidad de salir de su Casa!</p> 
+    </div>
+    </div>
+<div class="modal fade" id="MetodosDePago" >
+
+    <div class="modal-content">
+        <div class="modal-header">
+      <span class="close">&times;</span>
+        <h2>Aceptamos Varios Metodos de Pago</h2>
+      </div>
+      <div class="modal-body">
+        <p>en nuestra reposteria aceptamos diferentes medotodos de pago por su comodidad, entre ellos:</p>
+			<ul>
+			<li>Paypal</li>
+			<li>Zelle</li>
+			<li>Pago Movil</li>
+			<li>Efectivo</li>
+			<li>Transferencia</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="fondo2">
+<div class="contenedor">
+<div class="full">
+		<h2 class="titulo white">Testimonios</h2>
+	<div id="Testimonial" class="Testimonial">
+	<div class="test">
+		<p>
+			10/10 el mejor quesillo que he comido
+		</p>
+		<h4>
+		Roberto Ramirez
+		</h4>
+	</div>
+		<div class="test">
+		<p>
+			Su tortas son de alta calidad y el servicio es excelente
+		</p>
+		<h4>
+		Jose Gregorio
+		</h4>
+	</div>
+			<div class="test">
+		<p>
+			Las Galletas son muy ricas y entregan rapido los 
+			pedidos!
+		</p>
+		<h4>
+		Guillermo Paez
+		</h4>
+	</div>
+  <div class="test">
+    <p>
+    5 estrellas excelente servicio
+    </p>
+    <h4>
+    Juanito De La Vega
+    </h4>
+  </div>
+	</div>
+  </div>
+</section>
+<section>
+<div class="contenedor">
+	<div id="Contacto" class="FormularioDeContacto full">
+		<h2>Haga su pedido ya!</h2>
+		<form>
+<div class="fila ">
+<div class="columna">
+  <div class="entrada">
+    
+    <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+  </div>
+  <div class="entrada">
+    
+    <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+  </div>    
+  <div class="entrada">
+    
+    <input type="number" class="form-control" id="Telefono" placeholder="Telefono">
+  </div>
+      <div class="entrada">
+    <input type="text" class="form-control" id="Direccion" placeholder="Direccion">
+     </div>
+           <div class="entrada">
+    <input type="submit" class="form-control" id="Direccion" placeholder="Direccion">
+     </div>
+  </div>
+
+  </div>
+</form>
+	</div>
+  </div>
+</section>
+<footer id="Direccion">
+<h2>Direccion</h2>
+  <p><a href="https://www.google.com/maps/@10.7008617,-71.6526836,13.88z" target="_blank">Avenida 15 O, Maracaibo 4005, Zulia</a></p>
+</footer>
+<script>
+var modal = document.getElementById("EntregaADomicilio");
+
+// Get the button that opens the modal
+var btn = document.getElementById("EntregaADomicilio1");
+
+var modal1 = document.getElementById("MetodosDePago");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("MetodosDePago1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+    if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
